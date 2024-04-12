@@ -10,7 +10,10 @@
     width: 100%;
     /* height: 78px; */
     padding: 15px 20px;
-    /* position: fixed; */
+    z-index: 10;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
 
 }
 
@@ -29,10 +32,17 @@
 
     position: relative;
     display: flex;
+    
+}
+.call-us>a{
+    position: absolute;
+    right: 40px;
 }
 
 .call-us .us {
     color: #007A5C;
+    
+    
 }
 
 .call-us .phone-number {
@@ -45,6 +55,7 @@
     width: 1px;
     background-color: #32404D;
     right: 20px;
+    bottom: 22px;
 }
 
 .fa-facebook {
@@ -132,6 +143,11 @@
     height: 100%;
 
 }
+.home-button:hover .home-btn{
+    background: none;
+    border: 1px solid #fff;
+    color: #fff ;
+}
 
 .overlay {
     width: 100%;
@@ -211,59 +227,153 @@ a {
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
-.program{
+
+.program {
     padding-inline: 12px;
 }
-.program-1,.program-2{
-   border: 1px solid #D9E2E9;
-   padding: 15px;
-   margin-bottom: 30px;
-   overflow: hidden;
-   transition: 0.2s all ease;
+
+.program-1,
+.program-2 {
+    border: 1px solid #D9E2E9;
+    padding: 15px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: 0.2s all ease;
 }
-.programs-header{
+
+.programs-header {
     overflow: hidden;
 }
-.programs-header>img{
+
+.programs-header>img {
     transition: 0.4s all ease-out;
 }
-.programs-content{
+
+.programs-content {
     padding: 35px 20px 25px;
 }
-.programs-content>a:nth-child(1){
+
+.programs-content>a:nth-child(1) {
     color: #32404D;
     font-weight: 600;
     font-size: 26px;
     display: block;
     margin-bottom: 15px;
 }
-.programs-content>p{
+
+.programs-content>p {
     font-size: 16px;
     margin-bottom: 10px;
     line-height: 1.5;
     font-weight: 400;
 }
-.program-1:hover,.program-2:hover{
+
+.program-1:hover,
+.program-2:hover {
     border: 1px solid #007A5C;
 }
-.program-1:hover a,.program-2:hover a{
+
+.program-1:hover a,
+.program-2:hover a {
     color: #007A5C;
 }
 
-.program-1:hover img,.program-2:hover img{
+.program-1:hover img,
+.program-2:hover img {
     scale: 1.3;
     overflow: hidden;
 }
-.Learn-more-pr{
+
+.Learn-more-pr {
     transition: 0.4s all ease;
 }
- .Learn-more-pr:hover{
+
+.Learn-more-pr:hover {
     color: #007A5C;
     letter-spacing: 1px;
 }
 
+/* esssential resources */
+#ess-resources{
+    background-color: #F2FBF9;
+    display: flex;
+    justify-content: flex-end;
+}
+.ess-bg-img{  
+    width: 37%;
+    background-image: url(https://preview.colorlib.com/theme/universityedu/assets/img/gallery/visit1.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ess-content{
+    padding: 20px 40px 20px 50px;
+}
+.ess-content-header{
+    margin-bottom: 40px;
+}
+.ess-content-header>h2{
+    color: #32404D;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.ess-content-header>p{
+    color: #777777;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.ess-content-main>.ess-btn{
+    padding-bottom: 15px;
+}
+.ess-btn-content{
+    padding: 30px 30px 10px;
+    border: 1px solid rgba(93,100,106,0.2);
+    display: flex;
+    justify-content: space-around;
+    transition: all .4s ease;
+}
+.ess-btn-left>h5{
+    color: #32404D;
+    font-size: 20px;
+    margin-bottom: 13px;
+    font-weight: 700;
+    transition: all .4s ease;
+}
+.ess-btn-left>p{
+    color: #32404D;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.angle-border{
+    color: #007A5C;
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    text-align: center;
+    border: 1px solid #007A5C;
+    border-radius: 50%;
+    transition: all .4s ease;
+}
+
+.ess-btn-content:hover{
+    background: rgba(0,122,92,0.08);
+    border: 1px solid transparent;
+} 
+.ess-btn-content:hover h5{
+    color: #007A5C;
+}
+.ess-btn-content:hover a{
+    background: #007A5C;
+    color: #fff;
+}
+
+
 /* suallar */
-/* navbarda /* niye position fixed isdemir? */
 /*overlay islemir?  */
