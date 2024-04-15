@@ -2,6 +2,9 @@
     font-family: "Chivo", sans-serif;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* navbar */
 
@@ -58,19 +61,19 @@
     bottom: 22px;
 }
 
-.fa-facebook {
+.social-media>a>.fa-facebook {
 
     color: blue;
     font-size: 22px;
 }
 
-.fa-twitter {
+.social-media>a>.fa-twitter {
     padding-left: 4px;
     font-size: 22px;
     color: aqua;
 }
 
-.fa-youtube {
+.social-media>a>.fa-youtube {
     padding-left: 4px;
     font-size: 22px;
     color: red;
@@ -192,6 +195,7 @@ a {
     font-weight: 500;
     display: inline-block;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .a-line {
@@ -201,7 +205,9 @@ a {
     background-color: #007A5C;
     bottom: -10px;
 }
-
+.blog-content>a:hover{
+    letter-spacing: 1px;
+}
 
 /* programs */
 #programs {
@@ -374,6 +380,212 @@ a {
     color: #fff;
 }
 
+/* storiess */
+
+#story{
+    padding: 100px 50px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.s-header{
+    display: flex;
+    justify-content: space-between;
+}
+.s-header>h2{
+    color: #32404D;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.s-header>a{
+    transition: all 0.4s ease;
+}
+.s-header>a>.a-line{
+    bottom: 15px;
+}
+.s-main{
+    padding-inline: 12px;
+}
+.s-main-content{
+    padding-bottom: 30px;
+}
+.s-main-content>h4>a{
+    
+    color: #635c5c;
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 26px 18px 8px 22px;
+}
+.s-header>a:hover{
+    color: #007A5C;
+    letter-spacing: 1px;
+}
+.s-main-content:hover a{
+    color: #007A5C;
+}
+
+/* partners */
+#partners{
+    padding-block: 100px;
+}
+.p-header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.p-header>h2{
+    color: #32404D;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.p-header>p{
+    color: #777777;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.p-item{
+    padding-inline: 20px;
+}
+/* students */
+#students{
+    background-color: #007A5C;
+    display: flex;
+    align-items: center;
+    height: 630px;
+}
+.st-left-side{
+    background-color: #FFF6EE;
+    height: 100%;
+}
+.st-right-side{
+    padding: 20px 40px 20px 80px;
+}
+.st-content{
+    width: 85%;
+}
+.st-content>h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.st-content>a{
+      color: #fff;
+      transition: all 0.3s ease;
+}
+.st-content>a>.a-line{
+    background-color: #fff;
+}
+.st-content p{
+    font-size: 20px;
+    color: #C9D6CB;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.st-content>a:hover{
+    letter-spacing: 1px;
+}
+
+/* end */
+#end{
+    background-color: #32404D;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.end-list1{
+    display: flex;
+ margin-bottom: 50px;    
+}
+
+.end-list1>li{
+    padding-inline:12px ;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.end-list1>li>ul>li>a{
+    color: #A7AEB4;
+    font-size: 16px;
+    margin-bottom: 15px;
+
+}
+
+
+.newsletter>li:first-child{
+    color: #A7AEB4;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+form{
+    position: relative;
+    margin-bottom: 30px;
+}
+form>button{
+    border: 0;
+    padding: 21px 30px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #007A5C;
+    cursor: pointer;
+    position: absolute;
+    height: 60px;
+    bottom: 0;
+    outline: none;
+
+}
+form>input{
+    width: 100%;
+    padding: 10px 20px;
+    height: 60px;
+    outline: none;
+}
+.end-social{
+    display: flex;
+    /* gap: 7px; */
+}
+.end-brands{
+    font-size: 20px;
+}
+.end-social>.end-brands>.fa-brands{
+    color: #fff;
+    margin-right: 13px;
+}
+
+
+.back-to-top{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 30px;
+    background-color: #007A5C;
+    text-align: center;
+    border-radius: 50% ;
+}
+.fa-arrow-up{
+    color: #fff;
+    /* font-weight: 300; */
+    font-size: 24px;
+}
+
+
+
+
 
 /* suallar */
 /*overlay islemir?  */
+/* partnerler olan yerdeki oz ozune firlanma neter olur */
